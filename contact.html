@@ -31,8 +31,9 @@
 <script type='text/javascript' src='js/jquery-1.11.0.min.js'></script>
 <script type='text/javascript' src='js/jquery-migrate-1.2.1.min.js'></script>
 
+
 </head>
-<body class="home page">
+<body class="page">
 
 <!-- Header -->
 <div id="header-wrapper">
@@ -53,11 +54,11 @@
 			<nav id="primary-nav">
 				<div class="menu-container">
 					<ul id="menu-1" class="menu">
-						<li class="menu-item current-menu-item current_page_item"><a href="index.html">Home</a></li>
+						<li class="menu-item"><a href="index.html">Home</a></li>
 						<li class="menu-item"><a href="portfolio.html">Portfolio</a></li>
-						<li class="menu-item"><a href="contact.html">Contact</a></li>
+						<li class="menu-item current-menu-item current_page_item"><a href="contact.html">Contact</a></li>
                          <li><a href="mailto:akoswaranyc@gmail.com" title="Book Me" target="_blank">Book Me</a></li>
-                         <li><a href="shop.html">Shop</a></li>
+                          <li><a href="shop.html">Shop</a></li>
 					</ul>
 				</div>
 			</nav>
@@ -99,25 +100,6 @@
 	<div style="clear:both;"></div>
 </div>
 <!-- Header End -->
-<style>
-.home-fill {
-	width:100%;
-	height:100%;
-	background:url(images/home_fill.png);
-}
-</style>
-
-<!-- Content Area -->
-<div id="content-wrapper" class="front-page front-page-full-width-media">
-
-
-
-<div class="wrapper">
-    <button class="btn" onclick="window.location.href='mailto:akoswaranyc@gmail.com'">Book an appointment</button>
-</div>
-
-<img src="images/home/aisha.png">
-
 
 <style>
 .wrapper {
@@ -125,10 +107,6 @@
 }
 
 .btn {
-    /*  position  */
-    position: absolute;
-    top: 50%;
-    margin:0px 0px 0px -140px;
     /*  color  */
     border-color: white;
     color: white;
@@ -146,6 +124,8 @@
     border-radius: 6px;
     /*  stylizing  */
     display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
     white-space: nowrap;
     vertical-align: middle;
     -ms-touch-action: manipulation;
@@ -164,115 +144,82 @@ transition: all .2s ease-in-out;
 }
 </style>
 
+<!-- Content Area -->
+<div id="content-wrapper">
 
+	<section class="pages clearfix">
 
-<!--// HIDDEN 4/8/2016 Epic Slider
-	<section class="slider-full-width slider-homepage clearfix">
-		<div id="epicSlider1" class="epic-slider slider-wrapper">
-			<ul id="slides">
-				<li data-image="images/home/aisha.png" class="home-fill">
-					<div class="es-caption" style="" data-caption="impact" data-caption-position="center" data-caption-width="550">
-                        <span class="size-2">Aisha Koswara</span>
-						<span class="size-4">Fashion Professional</span>
-					</div>
-				</li>
-				<li data-image="images/home/video.png">
-					<div class="es-caption" style="" data-caption="impact" data-caption-position="center" data-caption-width="770">
-						<p><span class="size-2" style="margin-bottom:0;"> </span><span class="size-5"></span></p>
-					</div>
-					<div class="es-video-background-wrapper">
-						<video autoplay id="fs1" class="es-video-background">
-							<source src="images/portfolio/video/aisha_vimeo_reel-cropped.mp4" type="video/mp4" />
-							<source src="images/portfolio/video/aisha_vimeo_reel-cropped.ogg" type="video/ogg" />
-							<source src="images/portfolio/video/aisha_vimeo_reel-cropped.webm" type="video/webm" />
-						</video>
-					</div>
-				</li>
-				<li data-image="images/home/fashion.png">
-
-					<div class="es-caption" style="" data-caption="striped" data-caption-position="bottom-left" data-caption-width="550">
-						<p>
-							<span class="size-4">Fashion:</span>
-							<br />
-							<span class="size-6">Danny Hasting, Alexander Wang, Narciso Rodriguez, Stella McCartney, Willow, BCBG, Christopher Deane, Revlon, </span><br />
-						</p>
-					</div>
-				</li>
-				<li data-image="images/home/model.png">
-
-					<div class="es-caption" style="" data-caption="striped" data-caption-position="bottom-left" data-caption-width="550">
-						<p>
-							<span class="size-4">Musician, Models & Actors:</span>
-							<br />
-							<span class="size-6">Taylor Momsen, Danielle Parente, Mick Rock, Andre Bocelli, Gorge Posada, Jimmy Smits, Jaguares, Pedro, Capo, Ramon Rodriguez, New Sting Sextet </span><br />
-						</p>
-					</div>
-				</li>
-				<li data-image="images/home/music.png">
-					<div class="es-caption" style="" data-caption="striped" data-caption-position="bottom-left" data-caption-width="550">
-						<p>
-							<span class="size-4">Projects:</span><br />
-							<span class="size-6">VME TV PBS, Viva Voz Nightly Talk Show, Super Tuesday broadcast, On location style network, Ambush make-over, Campaign Ads for Pantene & Covergirl, Modern Salon, Fuego Magazine, NYTimes, NYPost & Angel Soft</span><br />
-						</p>
-					</div>
-				</li>
-
-			</ul>
+		<!-- Section Title -->
+		<div id="section-title">
+			<h1>Contact</h1>
 		</div>
-	</section>
-//END: HIDE-->
+		<!-- Section Title End -->
 
-	<!-- Epic Slider End -->
+		<!-- Content Left -->
+		<div class="content-inner-left">
+<p>'Aisha on 7th'</p>
+<p>133 East 7th, New York, NY 10009</p>
+
+			<div class="map" id="map_canvas" style="width:100%; height:300px;" data-map-lat="40.7262466" data-map-long="-73.9859152" data-map-zoom="15" data-map-marker="custom" data-map-info-title="Aisha on 7th Salon" data-map-info-content=" 133 East 7th, New York, NY 10009"></div>
+			<div class="column_one_third">
+				<ul class="connect">
+				    <li><a href="mailto:akoswaranyc@gmail.com" title="email" class="email" target="_blank">Email</a></li>
+                    <li><a href="https://www.facebook.com/ADKNYC77" title="facebook" class="facebook" target="_blank">Facebook</a></li>
+                    <li><a href="https://twitter.com/AishaKoswara" title="twitter" class="twitter" target="_blank">Twitter</a></li>
+				    <li><a href="https://instagram.com/aishakoswara" title="instagram" class="instagram" target="_blank">Instagram</a></li>
+			    </ul>
+
+
+
+			</div>
+
+			<div class="column_two_thirds last">
+			</div>
+
+			<div style="clear:both;"></div>
+            <!--<h4>Send us a message</h4>
+
+			<form action="php/contact.php" method="post" enctype="text/plain" class="form contactForm" id="contactForm" novalidate="novalidate">
+
+			    <p><input type="hidden" name="contactSubject" class="text-field" id="contactSubject" placeholder="Subject" value="Contact from AishaKoswara.com"></p>
+				<p class="udt_honey">
+					<label for="udt_contact_honeypot">Leave this field blank if you're human</label><br>
+					<input type="text" name="udt_contact_honeypot" id="udt_contact_honeypot" class="text-field" placeholder="">
+				</p>
+				<p><input type="text" name="contactName" class="required text-field" id="contactName" placeholder="Your Name*" required="required"></p>
+				<p><input type="email" name="contactEmail" class="required text-field" id="contactEmail" placeholder="E-mail*" required="required"></p>
+				<textarea class="required" name="contactMessage" id="contactMessage" rows="32" cols="8" placeholder="Message*" required="required"></textarea>
+				<p><span id="msg">* = required field</span></p>
+				<p style="float:left; clear:both; margin-top:10px;"><input type="submit" class="submit submitTheme submitForm" id="submitContact" name="submitContact" value="Send"></p>
+			</form>
+            -->
+		</div>
+		<!-- Content Left End -->
+
+		<!-- Sidebar -->
+		<aside class="sidebar">
+			<ul>
+				<li class="widget widget_text">
+					<h4 class="widget-title">Video Presentation</h4>
+					<div class="textwidget">
+						<div class="video" style="width:100%; height:auto; margin-bottom:0;">
+							<iframe src="//player.vimeo.com/video/96998554" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> <p><a href="https://vimeo.com/96998554">Aisha Koswara Hair Stylist Reel</a> from <a href="https://vimeo.com/willsalomon">Will Salomon Orellana</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</aside>
+		<!-- Sidebar End -->
+
+	</section>
+
 
 </div>
 <!-- Content Area End -->
 
 <!-- Footer -->
 <div id="footer-wrapper">
-<!--
-	<div id="footer-top" class="clearfix">
-		<footer>
-			<div class="column_one_third column-footer-widget">
-				<ul class="footer-widget">
-					<li class="widget widget_text">
-						<div class="textwidget">
-						<br>
-							<p>
-								<img src="images/logo-footer.png" alt="Raw" /><br />
-								Aisha's Creativity & Dedication to finding the beauty in everything has
-made her a sought after hair stylist for more than 10 years.
 
-Along with Hair Styling, Aisha has worked as an educator for:
-GHD, Colorly and Macadamia.
-
-Her work as a Stylist has included opportunities at New York Fashion Week
-working along side Top Stylist, Designers as well as established Photographers.
-
-							</p>
-						</div>
-					</li>
-				</ul>
-			</div>
-
-			<div class="column_one_third column-footer-widget">
-				<ul class="footer-widget"></ul>
-			</div>
-
-			<div class="column_one_third column-footer-widget last">
-				<ul class="footer-widget">
-					<li class="widget widget_text">
-						<h4 class="widget-title">Let’s Collaborate</h4>
-						<div class="textwidget">
-							<p>EMail:</p>
-						</div>
-					</li>
-				</ul>
-			</div>
-
-			<div class="clear"></div>
-		</footer>
-	</div>
--->
 	<div id="footer-bottom">
 		<div id="footer-bottom-inner-wrapper">
 			<footer>
@@ -300,5 +247,6 @@ working along side Top Stylist, Designers as well as established Photographers.
 <script type='text/javascript' src='js/udt_shortcodes.js'></script>
 <script type='text/javascript' src='https://maps.googleapis.com/maps/api/js?sensor=false'></script>
 <script type='text/javascript' src='js/contact.js'></script>
+
 </body>
 </html>
